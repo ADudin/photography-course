@@ -1,0 +1,13 @@
+.footer__container
+  width: calc(100% - 40px)
+  min-height: 64px
+  display: flex
+  align-items: center
+
+  @media screen and (min-width: $tablet-width)
+    width: calc(100% - 80px)
+    min-height: 104px
+
+  @media screen and (min-width: $desktop-width)
+    width: calc($desktop-width - 100px)
+    min-height: 124px

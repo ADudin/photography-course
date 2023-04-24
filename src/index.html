@@ -8,17 +8,47 @@
   <meta name="keywords" content="html, css, js">
   <meta name="author" content="Александр Дудин">
 </head>
+
 <body class="page">
+
   <header class="header">
-    <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="логотип">
-    <nav class="header__nav">
-      <ul class="header__nav-links">
-        <li class="header__nav-link">Композиция</li>
-        <li class="header__nav-link">Камера</li>
-        <li class="header__nav-link">Поиск заказов</li>
-      </ul>
-    </nav>
+    <div class="header__container">
+
+      <a class="header__logo-link header__logo-link_visibility_show" href="./index.html">
+        <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="логотип">
+      </a>
+
+      <button class="header__nav-button header__nav-button_type_open" type="button" aria-label="закрыть навигацию"></button>
+
+      <nav class="header__nav header__nav_visibility_hidden">
+
+        <ul class="header__nav-links">
+
+          <li class="header__nav-link-container">
+            <a class="header__nav-link" href="#">Композиция</a>
+          </li>
+
+          <li class="header__nav-link-container">
+            <a class="header__nav-link" href="#">Камера</a>
+          </li>
+
+          <li class="header__nav-link-container">
+            <a class="header__nav-link" href="#">Поиск заказов</a>
+          </li>
+          
+        </ul>
+
+      </nav>
+
+    </div>
   </header>
-  <main></main>
-  <footer></footer>
+
+  <main class="content"></main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <span class="footer__copyright">2021 Photo-lessons.</span>
+    </div>
+  </footer>
+
 </body>
