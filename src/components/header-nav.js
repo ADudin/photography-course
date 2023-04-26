@@ -1,14 +1,9 @@
 const header = document.querySelector('.header');
-const headerNavButton = header.querySelector('.header__nav-button');
+const headerNavButton = header.querySelector('.header__nav-btn');
 const headerLogoLink = header.querySelector('.header__logo-link');
 const headerNavContainer = header.querySelector('.header__nav');
 
-headerNavButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
-
-  headerNavButton.classList.toggle('header__nav-button_type_open');
-  headerNavButton.classList.toggle('header__nav-button_type_close');
-
+headerNavButton.addEventListener('click', () => {
   headerLogoLink.classList.toggle('header__logo-link_visibility_show');
   headerLogoLink.classList.toggle('header__logo-link_visibility_hidden');
 
