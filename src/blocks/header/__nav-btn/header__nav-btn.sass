@@ -1,0 +1,28 @@
+.header__nav-btn
+  display: flex
+  align-items: center
+  position: relative
+  bottom: 9px
+  width: 32px
+  z-index: 1
+
+  & > .header__nav-button-icon,
+  & > .header__nav-button-icon::before,
+  & > .header__nav-button-icon::after
+    display: block
+    position: absolute
+    width: 100%
+    height: 3px
+    background-color: $color-white
+    transition-duration: .25s
+
+  & > .header__nav-button-icon::before
+    content: ''
+    top: -8px
+
+  & > .header__nav-button-icon::after
+    content: ''
+    top: 8px
+  
+  @media screen and (min-width: $desktop-width)
+    display: none

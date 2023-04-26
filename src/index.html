@@ -18,7 +18,12 @@
         <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="логотип">
       </a>
 
-      <button class="header__nav-button header__nav-button_type_open" type="button" aria-label="закрыть навигацию"></button>
+      <div>
+        <input class="header__nav-toggle" id="menu-toggle" type="checkbox">
+        <label class="header__nav-btn" for="menu-toggle">
+          <span class="header__nav-button-icon"></span>
+        </label>
+      </div>
 
       <nav class="header__nav header__nav_visibility_hidden">
 

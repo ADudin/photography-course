@@ -1,0 +1,19 @@
+.header__nav-toggle
+  opacity: 0
+
+  &:checked ~ .header__nav-btn > .header__nav-button-icon
+    transform: rotate(45deg)
+    width: 27px
+
+  &:checked ~ .header__nav-btn > .header__nav-button-icon::before
+    top: 0
+    transform: rotate(0)
+    width: 27px
+  
+  &:checked ~ .header__nav-btn > .header__nav-button-icon::after
+    top: 0
+    transform: rotate(90deg)
+    width: 27px
+
+  @media screen and (min-width: $desktop-width)
+    display: none
