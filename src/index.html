@@ -30,7 +30,7 @@
         <ul class="header__nav-links">
 
           <li class="header__nav-link-container">
-            <a class="header__nav-link" href="#">Композиция</a>
+            <a class="header__nav-link" href="#composition">Композиция</a>
           </li>
 
           <li class="header__nav-link-container">
@@ -48,7 +48,41 @@
     </div>
   </header>
 
-  <main class="content"></main>
+  <main class="content">
+    
+    <section class="section two-columns intro">
+      <h1 class="main-title two-columns__title">Курс по фотографии</h1>
+      <img class="two-columns__img" src="<%=require('./images/intro-image.jpg')%>" alt="изображение хвойного леса">
+      <div class="two-columns__text">
+        <p class="intro__paragraph">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
+      </div>
+      <a class="link-button intro__link-button">Подробнее</a>
+    </section>
+
+    <section class="section composition">
+
+      <span class="section__nav-item" id="composition">Композиция</span>
+      
+      <div class="two-columns">
+        <h2 class="two-columns__title composition__title">Изучите композицию</h2>
+        <img class="two-columns__img" src="<%=require('./images/composition-image.jpg')%>" alt="изображение дороги, уходящей в хвойный лес">
+        <div class="two-columns__text">
+          <p class="composition__paragraph">Вы изучите гармоничное размещение всех элементов изображения на <span class="span-accent">снимке</span>.</p>
+          <p class="composition__paragraph">Изучите композицию интуитивную и&nbsp;какие&#8209;то&nbsp;определённые законы.</p>
+        </div>
+        <a class="link-button intro__link-button">Записаться!</a>
+      </div>
+
+      <ul class="composition__list">
+        <li class="composition__list-item">Прaвило третей, при котором нужно распологать объекты на пересечениях.</li>
+        <li class="composition__list-item">Простота: убирай всё лишнее и кадрируй!</li>
+        <li class="composition__list-item">Равновесие: уравновесь пятна объекта и фона.</li>
+        <li class="composition__list-item">3D глубина кадра: расположи объект позади и перед другими предметами.</li>
+      </ul>
+
+    </section>
+
+  </main>
 
   <footer class="footer">
     <div class="footer__container">
