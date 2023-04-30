@@ -1,0 +1,13 @@
+.composition__list
+  list-style: none
+  display: grid
+  row-gap: 28px
+  padding: 0
+  margin: 80px 0 0
+
+  @media screen and (min-width: $tablet-width)
+    row-gap: 60px
+
+  @media screen and (min-width: $desktop-width)
+    grid-template-columns: repeat(4, 291px)
+    column-gap: 56px
