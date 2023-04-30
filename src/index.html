@@ -34,7 +34,7 @@
           </li>
 
           <li class="header__nav-link-container">
-            <a class="header__nav-link" href="#">Камера</a>
+            <a class="header__nav-link" href="#camera">Камера</a>
           </li>
 
           <li class="header__nav-link-container">
@@ -52,7 +52,8 @@
     
     <section class="section two-columns intro">
       <h1 class="main-title two-columns__title">Курс по фотографии</h1>
-      <img class="two-columns__img" src="<%=require('./images/intro-image.jpg')%>" alt="изображение хвойного леса">
+      <!-- <img class="two-columns__img" src="<%=require('./images/intro-image.jpg')%>" alt="изображение хвойного леса"> -->
+      <div class="two-columns__img intro__img"></div>
       <div class="two-columns__text">
         <p class="intro__paragraph">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
       </div>
@@ -62,10 +63,11 @@
     <section class="section composition">
 
       <span class="section__nav-item" id="composition">Композиция</span>
-      
+
       <div class="two-columns">
         <h2 class="two-columns__title composition__title">Изучите композицию</h2>
-        <img class="two-columns__img" src="<%=require('./images/composition-image.jpg')%>" alt="изображение дороги, уходящей в хвойный лес">
+        <!-- <img class="two-columns__img composition__img" src="<%=require('./images/composition-image.jpg')%>" alt="изображение дороги, уходящей в хвойный лес"> -->
+        <div class="two-columns__img composition__img"></div>
         <div class="two-columns__text">
           <p class="composition__paragraph">Вы изучите гармоничное размещение всех элементов изображения на <span class="span-accent">снимке</span>.</p>
           <p class="composition__paragraph">Изучите композицию интуитивную и&nbsp;какие&#8209;то&nbsp;определённые законы.</p>
@@ -78,6 +80,43 @@
         <li class="composition__list-item">Простота: убирай всё лишнее и кадрируй!</li>
         <li class="composition__list-item">Равновесие: уравновесь пятна объекта и фона.</li>
         <li class="composition__list-item">3D глубина кадра: расположи объект позади и перед другими предметами.</li>
+      </ul>
+
+    </section>
+
+    <section class="section camera">
+
+      <span class="section__nav-item section__nav-item_theme_dark" id="camera">камера</span>
+
+      <div class="two-columns">
+        <h2 class="two-columns__title camera__title">
+          <span class="camera__title-item">Настройка</span>
+          <span class="camera__title-item">Съемка</span>
+          <span class="camera__title-item">Обработка</span>
+        </h2>
+        <!-- <img class="two-columns__img camera__img" src="<%=require('./images/camera-image.jpg')%>" alt="изображение густового лиственного леса со множеством папоротника"> -->
+        <div class="two-columns__img camera__img"></div>
+        <h3 class="camera__list-title">отзывы про часть о камерах:</h3>
+      </div>
+
+      <ul class="camera__list">
+
+        <li class="camera__list-item">
+          <blockquote class="camera__quote">на этом курсе я научился пользоваться камерой, как настоящий профессионал!</blockquote>
+          <div class="camera__quote-author-container">
+            <p class="camera__quote-author">Питер, водитель.</p>
+            <p class="camera__quote-author-subline">@piter123</p>
+          </div>
+        </li>
+
+        <li class="camera__list-item">
+          <blockquote class="camera__quote">супер крутой курс! на&nbsp;части про фотики я&nbsp;стал разбираться в предназначении кнопок</blockquote>
+          <div class="camera__quote-author-container">
+            <p class="camera__quote-author">Джон, спортсмен.</p>
+            <p class="camera__quote-author-subline">@john_sport</p>
+          </div>
+        </li>
+        
       </ul>
 
     </section>
