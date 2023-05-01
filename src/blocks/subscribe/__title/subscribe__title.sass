@@ -1,0 +1,27 @@
+.subscribe__title
+  font-weight: 400
+  font-size: 48px
+  line-height: 50px
+  max-width: 280px
+  margin: 0
+
+  @media screen and (min-width: $tablet-width)
+    font-size: 100px
+    line-height: 100px
+    max-width: 571px
+
+  @media screen and (min-width: $desktop-width)
+    position: relative
+    font-size: 120px
+    line-height: 120px
+    max-width: 685px
+
+    &::before
+      content: ''
+      position: absolute
+      top: 10px
+      left: -180px
+      width: 130px
+      height: 95px
+      background-image: url('../images/arrow.svg')
+      background-repeat: no-repeat

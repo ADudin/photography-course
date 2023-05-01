@@ -50,7 +50,7 @@
 
   <main class="content">
     
-    <!-- <section class="section intro">
+    <section class="section intro">
 
       <div class="two-columns">
         <h1 class="main-title two-columns__title">Курс по фотографии</h1>
@@ -58,10 +58,10 @@
         <div class="two-columns__text">
           <p class="intro__paragraph">Фотография в природных условиях, уроки по композиции и по пользованию камерой.</p>
         </div>
-        <a class="link-button two-columns__link-button">Подробнее</a>
+        <a class="link-button two-columns__link-button" href="#composition">Подробнее</a>
       </div>
       
-    </section> -->
+    </section>
 
     <section class="section composition">
 
@@ -74,7 +74,7 @@
           <p class="composition__paragraph">Вы изучите гармоничное размещение всех элементов изображения на <span class="span-accent">снимке</span>.</p>
           <p class="composition__paragraph">Изучите композицию интуитивную и&nbsp;какие&#8209;то&nbsp;определённые законы.</p>
         </div>
-        <a class="link-button two-columns__link-button">Записаться!</a>
+        <a class="link-button two-columns__link-button" href="#subscribe-form">Записаться!</a>
       </div>
 
       <ul class="composition__list">
@@ -86,7 +86,7 @@
 
     </section>
 
-    <!-- <section class="section camera">
+    <section class="section camera">
 
       <span class="section__nav-item section__nav-item_theme_dark" id="camera">камера</span>
 
@@ -120,7 +120,7 @@
         
       </ul>
 
-    </section> -->
+    </section>
 
     <section class="section orders">
 
@@ -132,9 +132,33 @@
         <div class="two-columns__text">
           <p class="orders__paragraph">Мы научим вас искать заказы на всяких фриланс биржах, а когда вы сделаете крутое портфолио, мы поможем найти постоянную работу.</p>
         </div>
-        <a class="link-button two-columns__link-button">Записаться!</a>
+        <a class="link-button two-columns__link-button" href="#subscribe-form">Записаться!</a>
       </div>
 
+    </section>
+
+    <section class="section subscribe">
+      <div class="subscribe__container">
+
+        <h2 class="subscribe__title">Записаться! Сейчас!</h2>
+
+        <form class="form" action="/" method="post" name="subscribe-form" id="subscribe-form">
+          <fieldset class="form__set">
+            <label class="form__field">
+              <input 
+                type="email" 
+                class="form__input" 
+                name="email-input" 
+                id="email-imput" 
+                required
+              >
+              <span class="form__placeholder">Ваша почта</span>
+            </label>
+            <button class="form__submit" type="submit" name="submit" aria-label="записаться">Записаться!</button>
+          </fieldset>
+        </form>
+
+      </div>
     </section>
 
   </main>
