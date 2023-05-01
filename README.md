@@ -11,6 +11,8 @@
 * Nested BEM
 * Sass  
 
-**Описание**
+**Описание**  
+
+Ссылка на опубликованный репозиторий: https://adudin.github.io/photography-course/
 
 Репозиторий создан для обучения на онлайн‑курсе «[Веб-разработчик плюс](https://practicum.yandex.ru/web-plus)» от [Яндекс.Практикум](https://practicum.yandex.ru).

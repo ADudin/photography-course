@@ -5,6 +5,7 @@
   bottom: 9px
   width: 32px
   z-index: 1
+  cursor: pointer
 
   & > .header__nav-button-icon,
   & > .header__nav-button-icon::before,
@@ -15,14 +16,17 @@
     height: 3px
     background-color: $color-white
     transition-duration: .25s
+    cursor: pointer
 
   & > .header__nav-button-icon::before
     content: ''
     top: -8px
+    cursor: pointer
 
   & > .header__nav-button-icon::after
     content: ''
     top: 8px
+    cursor: pointer
   
   @media screen and (min-width: $desktop-width)
     display: none
