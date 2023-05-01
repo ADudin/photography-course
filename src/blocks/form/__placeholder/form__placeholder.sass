@@ -1,0 +1,16 @@
+.form__placeholder
+  font-weight: 400
+  font-size: 11px
+  line-height: 24px
+  letter-spacing: 0.375px
+  color: $color-black
+  position: absolute
+  top: calc(50% - 12px)
+  left: 20px
+  width: 100%
+
+  .form__input:focus + &
+    display: none
+
+  @media screen and (min-width: $tablet-width)
+    font-size: 14px

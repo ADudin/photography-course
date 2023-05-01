@@ -1,0 +1,26 @@
+.form__submit
+  font-weight: 400
+  font-size: 11px
+  line-height: 24px
+  letter-spacing: 0.375px
+  color: $color-black
+  background-color: $color-white
+  border: 2px solid $color-black
+  border-top-right-radius: 8px
+  border-bottom-right-radius: 8px
+  cursor: pointer
+  transition: all .2s linear
+
+  &:hover 
+    font-weight: 500
+
+  &:active
+    font-weight: 500
+    opacity: .5
+
+  &:disabled
+    opacity: .5
+    cursor: not-allowed
+
+  @media screen and (min-width: $tablet-width)
+    font-size: 14px
