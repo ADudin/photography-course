@@ -1,0 +1,28 @@
+.link-button
+  font-size: 14px
+  line-height: 28px
+  text-decoration: none
+  color: $color-black
+  background-color: $color-white
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid $color-black
+  border-radius: 9999px
+  cursor: pointer
+  width: 169px
+  height: 40px
+  transition: all .2s linear
+
+  &:hover
+    font-weight: 500
+
+  &:active
+    font-weight: 500
+    opacity: .5
+
+  @media screen and (min-width: $tablet-width)
+    font-size: 18px
+    width: 228px
+    height: 49px 

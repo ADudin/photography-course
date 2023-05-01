@@ -1,0 +1,28 @@
+.camera__list-item
+  position: relative
+  display: grid
+  row-gap: 30px
+
+  &::after
+    content: ''
+    position: absolute
+    top: calc(100% + 30px)
+    left: 0
+    width: 100%
+    height: 1px
+    background-color: $color-white
+
+  &:last-of-type::after
+    display: none
+
+  @media screen and (min-width: $tablet-width)
+    row-gap: 60px
+
+    &::after
+      top: calc(100% + 60px)
+
+  @media screen and (min-width: $desktop-width)
+    max-width: 526px
+
+    &::after
+      display: none
